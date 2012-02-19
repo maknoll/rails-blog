@@ -1,0 +1,12 @@
+%article
+  %h2= post.title
+
+  .content
+    %p{:class => 'abstract'}= post.abstract
+    :markdown
+      #{post.text}
+
+  %time= post.created_at.to_s(:long)
+  - if current_user
+    [ #{link_to 'edit', edit_post_path(post)}
+    | #{link_to "delete",post, :method => :delete } ]

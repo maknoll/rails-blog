@@ -1,0 +1,12 @@
+%article
+  = link_to post do
+    %h2= post.title
+
+    .content
+      %p= post.abstract
+
+    %time= post.created_at.to_s(:long)
+    = pluralize post.comments.size, 'Comment'
+  - if current_user
+    [ #{link_to 'edit', edit_post_path(post)}
+    | #{link_to "delete",post, :method => :delete } ]

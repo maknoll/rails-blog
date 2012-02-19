@@ -1,0 +1,22 @@
+
+= render @post
+
+%h2{:id => 'comment_count'}= pluralize @post.comments.size, 'Comment'
+
+#comments
+  = render @post.comments.order :created_at
+
+%h3 Add a comment:
+= form_for [@post, @post.comments.build], :remote => true do |f|
+  %div
+    = f.label :name
+    %br/
+    = f.text_field :name
+
+  %div
+    = f.label :message
+    %br/
+    = f.text_area :message
+
+  %div
+    = f.submit

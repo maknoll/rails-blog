@@ -1,0 +1,4 @@
+- if current_user
+  = link_to 'New Post', new_post_path
+- @posts.reverse.each do |post|
+  = render :partial => "abstract", :locals => { :post => post }

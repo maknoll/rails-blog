@@ -1,0 +1,175 @@
+html
+{
+	height: 100%;
+	background-color: #333;
+}
+
+body
+{
+	font-family: "Helvetica", "Arial", sans;
+	font-weight: lighter;
+    font-size: 1em;
+	color: #333;
+	min-height: 100%;
+	background-color: #fff;
+	max-width: 58em;
+	margin: 0 auto;
+	padding: 0 1em;
+}
+
+h1
+{
+	font-weight: bold;
+	color: #333;
+    text-shadow: 1px 1px 3px #ccc;
+}
+
+h2, h3
+{
+	font-weight: normal;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #111;
+}
+
+header
+{
+}
+
+article
+{
+	margin: 3em 0;
+}
+
+article h2 {
+  font-family: "Georgia", serif;
+}
+
+article > .content
+{
+}
+
+article .content img
+{
+  max-width: 100%;
+}
+
+article .content p.abstract
+{
+  font-style: italic;
+}
+
+article .content a
+{
+  text-decoration: underline;
+}
+
+time
+{
+}
+
+#post_title
+{
+	width: 30em;
+    font-size: 1em;
+    font-weight: lighter;
+    font-family: "Helvetica", "Arial", sans;
+}
+
+#post_content
+{
+    font-weight: lighter;
+    font-family: "Helvetica", "Arial", sans;
+	width: 58em;
+    font-size: 1em;
+    height: 20em;
+}
+
+footer
+{
+  display: table;
+  max-width: 60em;
+  background: #222;
+  color: #aaa;
+  margin: 1.5em -1em;
+  padding: 0;
+}
+
+footer a {
+  color: #777;
+}
+footer a:hover {
+  color: #ccc;
+}
+
+.fourcol
+{
+  padding: 0 1em;
+  display: table-cell;
+  width: 18em;
+}
+
+.github-link {
+  font-size: 1.5em;
+  line-height: 1em;
+  margin: 1.5em 0 1em 0;
+  text-align: center;
+  font-family: "Georgia", serif;
+  font-style: italic;
+}
+
+.flattr {
+  margin: 1.5em auto;
+  width: 3.5em;
+}
+
+blockquote.twitter-tweet {
+  font-family: "Georgia", serif;
+  margin: 0 0 1.5em 0;
+}
+
+blockquote.twitter-tweet:before {
+  content: '\201C';
+}
+
+blockquote.twitter-tweet:after {
+  content: '\201D';
+}
+
+.twitter-account {
+  font-size: 1.5em;
+  line-height: 1em;
+  margin-bottom: 1em;
+  text-align: center;
+  font-family: "Georgia", serif;
+  font-style: italic;
+}
+
+input[type="text"], textarea {
+  font-family: "Helvetica", sans;
+  font-weight: lighter;
+}
+
+@media screen and (max-width: 680px) {
+
+  html {
+    -webkit-text-size-adjust: none;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  .fourcol {
+    display: block;
+    margin: 0 auto 3em auto;
+  }
+
+  footer {
+    display: block;
+    padding: 0.1em 0;
+  }
+
+}

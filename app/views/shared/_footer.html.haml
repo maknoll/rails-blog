@@ -1,0 +1,19 @@
+%section{:class => 'fourcol'}
+  %h2 Github
+  .github-link= link_to 'github.com/maknoll', 'https://github.com/maknoll'
+
+%section{:class => 'fourcol'}
+  %h2 Twitter
+  - status = Rails.cache.fetch "twitter_status", :expires_in => 5.minutes do 
+    - Twitter.user_timeline("plsch").first.text
+  = link_to "https://twitter.com/plsch" do
+    %blockquote{:class => 'twitter-tweet'}= status
+    .twitter-account @plsch
+
+%section{:class => 'fourcol'}
+  %h2 Flattr
+  .flattr
+    %a{:class => "FlattrButton", :style => "display:none;", :href => "http://martinknoll.org"}
+    %noscript
+      %a{:href => "http://flattr.com/thing/515367/Hyperaccelerated-Penguins", :target => "_blank"}
+        %img{:src => "http://api.flattr.com/button/flattr-badge-large.png", :alt => "Flattr this", :title => "Flattr this", :border => "0"}

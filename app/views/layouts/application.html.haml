@@ -1,0 +1,25 @@
+!!!
+%html
+  %head
+    %title Hyperacelerated Penguins #{@title} 
+    %meta{:name => "viewport", :content => "width=device-width, initial-scale=1.0"}
+    = stylesheet_link_tag    "/stylesheets/typography.css"
+    = stylesheet_link_tag    "application"
+    = javascript_include_tag "application"
+    = javascript_include_tag "flattr"
+    = csrf_meta_tags
+
+  %body
+    %header
+      &nbsp;
+      = link_to root_url do
+        %h1 Hyperaccelerated Penguins
+
+    - flash.each do |key, msg|
+      %div{ :class => key }= msg
+    - if current_user
+      = link_to 'Logout', logout_path
+
+    = yield
+
+    %footer= render :partial => 'shared/footer'
