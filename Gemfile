@@ -10,6 +10,9 @@ gem 'rdiscount'
 gem 'haml-rails'
 gem 'coffee-rails'
 gem 'twitter'
+gem 'paperclip'
+gem 'aws-sdk'
+gem 'aws-s3'
 
 group :development do
   gem "sqlite3"

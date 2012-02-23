@@ -1,32 +1,28 @@
-html
-{
-	height: 100%;
-	background-color: #333;
+html {
+  height: 100%;
+  background-color: #333;
 }
 
-body
-{
-	font-family: "Helvetica", "Arial", sans;
-	font-weight: lighter;
-    font-size: 1em;
-	color: #333;
-	min-height: 100%;
-	background-color: #fff;
-	max-width: 58em;
-	margin: 0 auto;
-	padding: 0 1em;
+body {
+  font-family: "Helvetica", "Arial", sans;
+  font-weight: lighter;
+  font-size: 1em;
+  color: #333;
+  min-height: 100%;
+  background-color: #fff;
+  max-width: 58em;
+  margin: 0 auto;
+  padding: 0 1em;
 }
 
-h1
-{
-	font-weight: bold;
-	color: #333;
-    text-shadow: 1px 1px 3px #ccc;
+h1 {
+  font-weight: bold;
+  color: #333;
+  text-shadow: 1px 1px 3px #ccc;
 }
 
-h2, h3
-{
-	font-weight: normal;
+h2, h3 {
+  font-weight: normal;
 }
 
 a:hover {
@@ -34,61 +30,49 @@ a:hover {
   color: #111;
 }
 
-header
-{
+header {
 }
 
-article
-{
-	margin: 3em 0;
+article {
+  margin: 3em 0;
 }
 
 article h2 {
   font-family: "Georgia", serif;
 }
 
-article > .content
-{
+article > .content {
 }
 
-article .content img
-{
+img {
   max-width: 100%;
 }
 
-article .content p.abstract
-{
+article .content p.abstract {
   font-style: italic;
 }
 
-article .content a
-{
+article .content a {
   text-decoration: underline;
 }
 
-time
-{
+time {
 }
 
-#post_title
-{
-	width: 30em;
-    font-size: 1em;
-    font-weight: lighter;
-    font-family: "Helvetica", "Arial", sans;
+#post_title {
+  width: 30em;
+  font-weight: lighter;
+  font-family: "Helvetica", "Arial", sans;
 }
 
-#post_content
-{
-    font-weight: lighter;
-    font-family: "Helvetica", "Arial", sans;
-	width: 58em;
-    font-size: 1em;
-    height: 20em;
+#post_content {
+  font-weight: lighter;
+  font-family: "Helvetica", "Arial", sans;
+  width: 58em;
+  height: 20em;
 }
 
-footer
-{
+footer {
   display: table;
   max-width: 60em;
   background: #222;
@@ -104,8 +88,7 @@ footer a:hover {
   color: #ccc;
 }
 
-.fourcol
-{
+.fourcol {
   padding: 0 1em;
   display: table-cell;
   width: 18em;
@@ -150,6 +133,10 @@ blockquote.twitter-tweet:after {
 input[type="text"], textarea {
   font-family: "Helvetica", sans;
   font-weight: lighter;
+}
+
+#comments-container {
+  margin: 0 8%;
 }
 
 @media screen and (max-width: 680px) {

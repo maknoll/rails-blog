@@ -1,0 +1,10 @@
+%h2 Bilder Upload
+= form_for @image, :html => { :multipart => true } do |f|
+  - if @image.errors.any?
+    %h2 #{pluralize(@image.errors.count, "error")} prohibited this image from being saved:
+    %ul
+    - @image.errors.full_messages.each do |msg|
+      %li= msg
+  = f.label :file, "Bild"
+  = f.file_field :file
+  = f.submit "Upload"

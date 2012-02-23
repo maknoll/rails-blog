@@ -13,6 +13,7 @@ Blog::Application.routes.draw do
   end
   resources :users
   resources :sessions
+  resources :images
 
   root  :to => 'posts#index'
 

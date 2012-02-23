@@ -3,7 +3,6 @@
   %head
     %title Hyperacelerated Penguins #{@title} 
     %meta{:name => "viewport", :content => "width=device-width, initial-scale=1.0"}
-    = stylesheet_link_tag    "/stylesheets/typography.css"
     = stylesheet_link_tag    "application"
     = javascript_include_tag "application"
     = javascript_include_tag "flattr"
@@ -22,4 +21,4 @@
 
     = yield
 
-    %footer= render :partial => 'shared/footer'
+    %footer= render :partial => 'footer'
