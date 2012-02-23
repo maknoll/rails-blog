@@ -159,4 +159,9 @@ input[type="text"], textarea {
     padding: 0.1em 0;
   }
 
+  input[type="text"], input[type="password"], textarea {
+    width: 13em;
+  }
+
+
 }
