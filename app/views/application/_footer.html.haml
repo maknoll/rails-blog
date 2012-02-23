@@ -5,7 +5,10 @@
 %section{:class => 'fourcol'}
   %h2 Twitter
   - status = Rails.cache.fetch "twitter_status", :expires_in => 5.minutes do 
-    - Twitter.user_timeline("plsch").first.text
+    - begin
+      - Twitter.user_timeline("plsch").first.text
+    - rescue
+      - "Twitter Error"
   = link_to "https://twitter.com/plsch" do
     %blockquote{:class => 'twitter-tweet'}= status
     .twitter-account @plsch
